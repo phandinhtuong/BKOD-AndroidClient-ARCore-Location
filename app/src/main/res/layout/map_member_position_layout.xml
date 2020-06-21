@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <!-- Tam -->
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:id="@+id/member_location_image"
+            android:src="@drawable/marker_center"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"/>
+    </RelativeLayout>
+</layout>

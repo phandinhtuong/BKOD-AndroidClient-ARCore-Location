@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="8dp"
+        android:id="@+id/tour_layout">
+        <ImageView
+            android:id="@+id/img_tour_logo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/xuan_bac" />
+        <TextView
+            android:id="@+id/txt_tour_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_toEndOf="@id/img_tour_logo"
+            android:text="Bach khoa open day"
+            android:layout_marginLeft="10dp"
+            android:maxLines="2"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/txt_tour_info"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_toEndOf="@id/img_tour_logo"
+            android:layout_below="@id/txt_tour_title"
+            android:layout_marginLeft="10dp"
+            android:text="11/06/2019 - Thành viên - Chưa diễn ra"
+            android:textColor="@color/colorInfo"
+            android:maxLines="1"
+            android:autoSizeTextType="uniform"
+            android:gravity="center_vertical"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@id/tour_layout">
+    </View>
+</RelativeLayout>

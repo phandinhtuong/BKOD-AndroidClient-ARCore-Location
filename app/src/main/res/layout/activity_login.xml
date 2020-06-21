@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".LoginActivity"
+        android:background="#FFFFFF">
+        <!-- Thong bao dang dang nhap -->
+        <RelativeLayout
+            android:id="@+id/login_progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" >
+            <ProgressBar
+                android:layout_width="@dimen/progress_circle_size"
+                android:layout_height="@dimen/progress_circle_size"
+                android:layout_centerInParent="true"
+                android:indeterminateTint="@color/colorMain" />
+        </RelativeLayout>
+        <!-- Giao dien dang nhap -->
+        <RelativeLayout
+            android:id="@+id/login_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+            <include
+                layout="@layout/full_custom_action_bar_layout"
+                android:id="@+id/action_bar" >
+            </include>
+            <!-- Giao dien dang nhap -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="10dp"
+                android:layout_below="@id/action_bar">
+                <LinearLayout
+                    android:id="@+id/login_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="100dp">
+                    <!-- Goi y dang nhap -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sign_in_hint"
+                        android:textSize="18dp"/>
+                    <!-- Dang nhap email -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary">
+                        <AutoCompleteTextView
+                            android:id="@+id/login_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:imeOptions="actionNext"
+                            android:hint="@string/email"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="a@a.a"
+                            android:drawableLeft="@drawable/email_drawable_left"
+                            android:drawablePadding="5dp"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!-- Dang nhap mat khau -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:layout_marginTop="5dp">
+                        <EditText
+                            android:id="@+id/login_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:imeOptions="actionGo"
+                            android:hint="@string/password"
+                            android:inputType="textPassword"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="a"
+                            android:drawableLeft="@drawable/password_drawable_left"
+                            android:drawablePadding="5dp"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+                <!-- Nut dang nhap -->
+                <Button
+                    android:id="@+id/login_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/action_sign_in"
+                    android:background="@drawable/rounded_button"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_below="@+id/login_input"/>
+                <!-- Goi y dang ky -->
+                <TextView
+                    android:id="@+id/tvTest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up_hint"
+                    android:textSize="16dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/colorInfo"
+                    android:layout_above="@id/free_sign_up_button"/>
+                <!-- Nut dang ky tu do -->
+                <Button
+                    android:id="@+id/free_sign_up_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/action_free_sign_up"
+                    android:background="@null"
+                    android:minHeight="30dp"
+                    android:textColor="@color/colorMain"
+                    android:textAllCaps="false"
+                    android:textSize="16dp"
+                    android:layout_above="@id/sign_up_button"/>
+
+                <!-- Nut dang ky voi nha truong -->
+                <Button
+                    android:id="@+id/sign_up_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/action_hust_sign_up"
+                    android:background="@null"
+                    android:minHeight="30dp"
+                    android:textColor="@color/colorMain"
+                    android:textAllCaps="false"
+                    android:textSize="16dp"
+                    android:maxLines="1"
+                    android:layout_marginBottom="20dp"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

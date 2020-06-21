@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#f5fff5">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorPrimaryDark">
+    </View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="right">
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark">
+        </View>
+
+        <!-- Vai tro -->
+        <TextView
+            android:id="@+id/txt_member_function"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Truong doan"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorPrimaryDark"
+            android:paddingHorizontal="3dp"
+            android:textSize="18dp"/>
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark">
+        </View>
+        <!-- Ten thanh vien -->
+        <TextView
+            android:id="@+id/txt_member_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Le Manh Hung"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="center_vertical"
+            android:paddingHorizontal="3dp"
+            android:textSize="18dp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark">
+        </View>
+        <!-- Trang thai online -->
+        <ImageView
+            android:id="@+id/img_member_state"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:src="@drawable/online_icon"
+            android:paddingHorizontal="3dp" />
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark">
+        </View>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorPrimaryDark"
+        android:layout_gravity="bottom">
+    </View>
+</LinearLayout>

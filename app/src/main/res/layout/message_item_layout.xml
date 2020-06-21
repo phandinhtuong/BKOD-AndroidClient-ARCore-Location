@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#f5fff5"
+        android:id="@+id/item_message_layout">
+        <!-- Mep trai -->
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark">
+        </View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Mep tren -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorPrimaryDark">
+            </View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!-- Noi dung tin nhan -->
+                <TextView
+                    android:id="@+id/txt_message_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hello abasdfaewabsd"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:paddingHorizontal="3dp"
+                    android:textSize="18dp"/>
+                <!-- Vach duoi -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/colorPrimaryDark">
+                </View>
+                <!-- Ngay nhan tin -->
+                <TextView
+                    android:id="@+id/txt_message_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="11:20:00 01/06/1996"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:gravity="right"
+                    android:paddingHorizontal="5dp"
+                    android:textSize="14dp" />
+            </LinearLayout>
+            <!-- Mep duoi -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorPrimaryDark"
+                android:layout_gravity="bottom">
+            </View>
+        </LinearLayout>
+        <!-- Mep phai -->
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark">
+        </View>
+    </LinearLayout>
+</LinearLayout>

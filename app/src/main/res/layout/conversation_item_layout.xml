@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+    <!-- Mep trai -->
+    <View
+        android:layout_width="1px"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimaryDark">
+    </View>
+    <!-- Dong tren -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/first_line"
+        android:orientation="horizontal">
+        <!-- Ten nguoi nhan tin -->
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/txt_member_fullname"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Le Manh Hung"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp" />
+        <!-- Mep giua -->
+        <View
+            android:layout_width="1px"
+            android:layout_height="30dp"
+            android:background="@color/colorPrimaryDark">
+        </View>
+        <!-- Ngay nhan tin -->
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/txt_send_date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="01-06-2019"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <!-- Mep duoi -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@id/first_line">
+    </View>
+    <!-- Noi dung tin nhan cuoi cung -->
+    <TextView
+        android:id="@+id/txt_last_message"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/first_line"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="2dp"
+        android:text="Bach khoa open day"
+        android:textSize="17dp"
+        android:textColor="@color/colorBlack"
+        android:maxLines="2"/>
+    <!-- Mep duoi -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@id/txt_last_message">
+    </View>
+    <!-- Mep phai -->
+    <View
+        android:layout_width="1px"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_toRightOf="@id/first_line">
+    </View>
+</RelativeLayout>

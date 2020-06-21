@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorTitle">#13dcff</color>
+    <color name="colorMain">#EF5252</color>
+    <color name="colorInfo">#ACACAC</color>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#676767</color>
+    <color name="colorHomeBackground">#f2f5f5</color>
+    <color name="colorBlack">#676767</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorTourStateActive">#84D52B</color>
+    <color name="colorTourStateInactive">#D10921</color>
+    <color name="colorTourStateWaiting">#F6AC33</color>
+</resources>

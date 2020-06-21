@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MessageActivity">
+        <!-- Thong bao dang lam gi do -->
+        <ProgressBar
+            android:id="@+id/message_progress"
+            android:layout_width="@dimen/progress_circle_size"
+            android:layout_height="@dimen/progress_circle_size"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="@color/colorMain"
+            android:visibility="visible" />
+
+        <!-- Giao dien tin nhan -->
+        <LinearLayout
+            android:id="@+id/message_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <!-- Tieu de -->
+            <include
+                layout="@layout/full_custom_action_bar_layout"
+                android:id="@+id/action_bar" >
+            </include>
+            <!-- Khung hien thi danh sach tin nhan -->
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="5dp"/>
+            <!-- Vach ke duoi -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorPrimaryDark"/>
+            <!-- Khung nhap tin nhan -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/input_layout"
+                android:orientation="horizontal">
+                <!-- Khung nhap tin nhan -->
+                <!-- Dang ky email -->
+                <EditText
+                    android:id="@+id/input_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:paddingHorizontal="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:imeOptions="actionSend"
+                    android:hint="@string/input_message"/>
+                <!-- Nut gui tin nhan -->
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/send_message"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:src="@mipmap/send_message"
+                    android:background="@null"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

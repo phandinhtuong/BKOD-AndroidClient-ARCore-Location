@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#f5fff5">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorPrimaryDark">
+    </View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="right">
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark">
+        </View>
+
+        <!-- Thoi gian -->
+        <TextView
+            android:id="@+id/txt_timesheet_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="8:00:00 - 9:00:00"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorPrimaryDark"
+            android:paddingHorizontal="3dp"
+            android:textSize="18dp"/>
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark">
+        </View>
+        <!-- Toa nha + lop hoc -->
+        <TextView
+            android:id="@+id/txt_timesheet_classroom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="D3-203"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="center_vertical"
+            android:paddingHorizontal="3dp"
+            android:textSize="18dp" />
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark">
+        </View>
+        <!-- Khoang cach -->
+        <TextView
+            android:id="@+id/txt_timesheet_distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="15m"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="center_vertical"
+            android:paddingHorizontal="3dp"
+            android:textSize="18dp" />
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark">
+        </View>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorPrimaryDark"
+        android:layout_gravity="bottom">
+    </View>
+</LinearLayout>

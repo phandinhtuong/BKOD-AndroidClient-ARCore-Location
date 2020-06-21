@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- Thong bao dang lay ban do tour -->
+        <RelativeLayout
+            android:id="@+id/tour_map_image_progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" >
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="@dimen/progress_circle_size"
+                android:layout_height="@dimen/progress_circle_size"
+                android:layout_centerInParent="true"
+                android:indeterminateTint="@color/colorMain"/>
+        </RelativeLayout>
+        <!-- Giao dien ban do tour -->
+        <RelativeLayout
+            android:id="@+id/tour_map_image_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+            <include
+                layout="@layout/full_custom_action_bar_layout"
+                android:id="@+id/action_bar" >
+            </include>
+            <!-- Hinh anh ban do tour -->
+            <Classes.ZoomableImageView
+                android:id="@+id/tour_map_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_1"
+                android:layout_below="@id/action_bar"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>
