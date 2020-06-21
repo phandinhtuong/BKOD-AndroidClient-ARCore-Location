@@ -172,15 +172,20 @@ public class ArActivity extends AppCompatActivity implements GLSurfaceView.Rende
 //        );
 
 
-//        LatLng latLng = TourTabsActivity.markerPosition.get(0);
-//        double lat = latLng.longitude;
-//        double lng = latLng.latitude;
-//        ArrayList<String> markerNameList = new ArrayList<String>();
+        //get markerList from TourTabsActivity to display on AR Camera
         for (int i = 0; i<TourTabsActivity.markerList.size();i++){
+            //get each marker
             MarkerOptions marker = TourTabsActivity.markerList.get(i);
-//            LocationMarker name = new LocationMarker(marker.getPosition().longitude,marker.getPosition().latitude, new ImageRenderer("marker.png"));
-            locationScene.mLocationMarkers.add(new LocationMarker(marker.getPosition().longitude,marker.getPosition().latitude, new AnnotationRenderer(marker.getTitle())));
+            //display distance and name
+            locationScene.mLocationMarkers.add(new LocationMarker(marker.getPosition().longitude,
+                    marker.getPosition().latitude, new AnnotationRenderer(marker.getTitle())));
+            //display marker
+//            locationScene.mLocationMarkers.add(new LocationMarker(marker.getPosition().longitude,
+//                    marker.getPosition().latitude, new ImageRenderer("marker.png")));
         }
+
+
+
 //        final LocationMarker D9 = new LocationMarker(
 //                lng, lat, new ImageRenderer("marker.png") // display image
 //        );
